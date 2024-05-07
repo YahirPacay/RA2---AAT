@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <header class="position-relative">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="" width="150px"
+            class="img-fluid">
+        <img src="data:image/png;base64,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"
+            alt="" class="position-absolute top-0 end-0 img-fluid">
+    </header>
+    <br><br><br><br>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="carreras.html">carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estudiante.html">Estudiante</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <p class="p-1"></p>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 order-sm-1 order-lg-1">
+            <h3 class="p-3 text-sm-center  text-lg-start">Ubicación</h3>
+        </div>
+        <div class="col-lg-6 col-sm-12  order-sm-12 order-lg-4  text-sm-center  text-lg-end">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png"
+                alt="" width="50px" class=""> <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/220px-Logo_of_Twitter.svg.png"
+                alt="" width="50px" class="rounded"> <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/220px-2021_Facebook_icon.svg.png"
+                alt="" width="50px" class="rounded">
+        </div>
+    </div>
+    <p class="p-3"></p>
+    <div class="row">
+        <div class="col-12 text-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.784503217603!2d-90.57077661284177!3d14.587897500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a13c91d3040d%3A0xc41e0810dd744602!2sUniversidad%20de%20San%20Carlos%20de%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1710861260116!5m2!1ses-419!2sgt"
+                width="800" height="650" style="border:1 black solid;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="img-fluid rounded-5"></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 p-5">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://lahora.gt/wp-content/uploads/sites/5/2023/01/Usac-9.jpeg"
+                            class="d-block w-50 rounded-5" style="margin: auto;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-info">Universidad de San Carlos</h5>
+                            <p class="bg-success">La unica universidad publica a nivel nacional.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://deportes.usac.edu.gt/images/header-deportes-4.jpg"
+                            class="d-block w-50 rounded-5" style="margin: auto;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light">Club Deportivos</h5>
+                            <p class="bg-info">Contamos con instalaciones para la realizacion de deportes a nivel competición.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.usac.edu.gt/img/infografia_mapausac_2018_A.jpg" class="d-block w-50 rounded-5"
+                            style="margin: auto;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-info">Mapa de la Universidad</h5>
+                            <p class="text-light">Aqui se muestra un mapa para que te puedas guiar a tus clases.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    <span class="sr-only text-info">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    <span class="sr-only text-info">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-bg-danger p-4">
+        <p>Id y Enseñar a Todos</p>
+    </footer>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
